@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Форма/Погнали</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <div class="page-header__inner">
+          <a class="page-header__logo" href="https://htmlacademy.ru/intensive/adaptive">Погнали?</a>
+          <button class="page-header__open page-header__burger" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <h2 class="page-header__text">Направления</h2>
+
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">О сервисе</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Направления</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Попутчики</a>
+            </li>
+          </ul>
+
+          <a class="main-nav__authorization" href="#">Авторизация</a>
+
+          <ul class="main-nav__contacts contacts">
+            <li class="contact__item">
+              <a class="contact__phone" href="tel:+78005558628">8 800 555-86-28</a>
+            </li>
+            <li class="contact__item">
+              <a class="contact__email" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </li>
+          </ul>
+
+          <section class="social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="#">facebook</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="#">vkontakte</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="#">instagram</a>
+              </li>
+            </ul>
+          </section>
+
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+
+      <section class="user-section">
+        <div class="container">
+          <div class="user-section__level level">
+            <span class="level__number">80</span>
+            <span class="level__text">level</span>
+          </div>
+          <img class="user-section__avatar" src="#" width="100" height="100" alt="Фотография пользователя">
+        </div>
+        <button class="user-page__button" type="button" aria-label="change-photo">Сменить фото</button>
+        <div class="user-section__tags tags">
+          <h2 class="tags__title">Теги</h2>
+          <label class="tags__label" for="tags"></label>
+          <textarea id="tags" name="tags" rows="5" cols="33">#бургер #бар #футбол #концерт #крафт</textarea>
+        </div>
+        <div class="user-section__transport">
+          <h2 class="user-section__title">Транспорт</h2>
+          <ul class="user-section__travel-mods user-section__travel-mods--painted ">
+            <li class="user-section__travel-mod user-section__travel-mod--plane user-section__travel-mod--active">plane</li>
+            <li class="user-section__travel-mod user-section__travel-mod--bus user-section__travel-mod--active">bus</li>
+            <li class="user-section__travel-mod user-section__travel-mod--bicycle">bicycle</li>
+            <li class="user-section__travel-mod user-section__travel-mod--walk user-section__travel-mod--active">walk</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="user-plans">
+        <div class="container">
+          <h2 class="user-plans__title">Мои планы:</h2>
+          <ul class="user-plans__list">
+            <li class="user-plans__item">
+              <p class="user-plans__place">Франция, Италия</p>
+              <p class="user-plans__fellow-travellers">3 попутчика</p>
+              <p class="user-plans__dates">26 мар — 29 мар</p>
+              <a class="user-plans__link" href="#">Изменить</a>
+            </li>
+            <li class="user-plans__item">
+              <p class="user-plans__place">Таиланд, Индонезия</p>
+              <p class="user-plans__fellow-travellers">1 попутчик</p>
+              <p class="user-plans__dates">1 июл — 15 июл</p>
+              <a class="user-plans__link" href="#">Изменить</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <form class="plans" action="https://echo.htmlacademy.ru/" method="POST">
+        <div class="container">
+          <h2 class="plans__title">Добавить план:</h2>
+          <p class="plans__point">
+            <span class="plans__point plans__point--current"></span>
+            <span class="plans__point"></span>
+            <span class="plans__point"></span>
+          </p>
+
+          <fieldset class="plan plan--dates" id="step1">
+            <h2 class="plan__title">Шаг 1. Даты пребывания</h2>
+            <p class="plan__text">Укажите предпочтительное количество попутчиков, которых
+                вы хотели бы позвать в поездку, и ее предполагаемую длительность.
+            </p>
+
+            <div class="plan__counter counter plan__counter--companion">
+              <label class="counter__label" for="number-companion">
+                Ищу попутчиков:
+                <span class="counter__units">чел.</span>
+              </label>
+              <div class="counter__inner">
+                <button class="counter__button counter__button--decrease" type="button" aria-label="decrease">-</button>
+                <input class="counter__number" type="number" value="2" id="number-companion">
+                <button class="counter__button counter__button--increase" type="button" aria-label="increase">+</button>
+              </div>
+            </div>
+
+            <div class="plan__counter counter plan__counter--days ">
+              <label class="counter__label" for="number-days">
+                Длительность:
+                <span class="counter__units">дн.</span>
+              </label>
+              <div class="counter__inner">
+                <button class="counter__button counter__button--decrease" type="button" aria-label="decrease">-</button>
+                <input class="counter__number" type="number" value="3" id="number-days">
+                <button class="counter__button counter__button--increase" type="button" aria-label="increase">+</button>
+              </div>
+            </div>
+
+            <div class="kids-box">
+              <input class="kids-box__allowed" type="checkbox" name="kids" id="kids" checked>
+              <label for="kids">Можно с детьми</label>
+            </div>
+
+
+            <div class="calendar">
+
+              <div class="month">
+                <div class="month__control--prew"></div>
+                <h2 class="month__title">Март 2019</h2>
+                <div class="month__control--next"></div>
+              </div>
+
+              <div class="days-of-the-week">
+                <span class="days-of-the-week__day">П</span>
+                <span class="days-of-the-week__day">В</span>
+                <span class="days-of-the-week__day">С</span>
+                <span class="days-of-the-week__day">Ч</span>
+                <span class="days-of-the-week__day">П</span>
+                <span class="days-of-the-week__day days-of-the-week__day--off">С</span>
+                <span class="days-of-the-week__day days-of-the-week__day--off">В</span>
+              </div>
+
+              <div class="weeks-module">
+                <div class="weeks-module__week">
+                  <span class="day-module">23</span>
+                  <span class="day-module">24</span>
+                  <span class="day-module">25</span>
+                  <span class="day-module">26</span>
+                  <span class="day-module">27</span>
+                  <span class="day-module">28</span>
+                  <span class="day-module">1</span>
+                </div>
+
+                <div class="weeks-module__week">
+                  <span class="day-module">2</span>
+                  <span class="day-module">3</span>
+                  <span class="day-module">4</span>
+                  <span class="day-module">5</span>
+                  <span class="day-module">6</span>
+                  <span class="day-module">7</span>
+                  <span class="day-module">8</span>
+                </div>
+
+                <div class="weeks-module__week">
+                  <span class="day-module">8</span>
+                  <span class="day-module">10</span>
+                  <span class="day-module">11</span>
+                  <span class="day-module">12</span>
+                  <span class="day-module">13</span>
+                  <span class="day-module">14</span>
+                  <span class="day-module">15</span>
+                </div>
+
+                <div class="weeks-module__week">
+                  <span class="day-module">16</span>
+                  <span class="day-module">17</span>
+                  <span class="day-module">18</span>
+                  <span class="day-module">19</span>
+                  <span class="day-module">20</span>
+                  <span class="day-module">21</span>
+                  <span class="day-module">22</span>
+                </div>
+
+                <div class="weeks-module__week">
+                  <span class="day-module">23</span>
+                  <span class="day-module">24</span>
+                  <span class="day-module">25</span>
+                  <span class="day-module day-module--active">26</span>
+                  <span class="day-module day-module--active">27</span>
+                  <span class="day-module day-module--active">28</span>
+                  <span class="day-module">29</span>
+                </div>
+
+                <div class="weeks-module__week">
+                  <span class="day-module">30</span>
+                  <span class="day-module">31</span>
+                  <span class="day-module">1</span>
+                  <span class="day-module">2</span>
+                  <span class="day-module">3</span>
+                  <span class="day-module">4</span>
+                  <span class="day-module">5</span>
+                </div>
+              </div>
+            </div>
+
+            <a class="plan__link" href="#step2">Следующий шаг</a>
+          </fieldset>
+
+          <fieldset class="plan plan--route" id="step2">
+
+            <h2 class="plan__title">Шаг 2. Маршрут</h2>
+            <p class="plan__text">Укажите страны, которые вы хотели бы посетить.
+               Это может быть одна или сразу несколько.
+            </p>
+
+            <div class="destinations">
+              <div class="destinations__inner">
+                <label class="destinations__label" for="country-select1"></label>
+                <select class="destinations__select" name="country" id="country-select1">
+                  <option class="destination__option" value="Босния и Герцеговина" selected>Босния и Герцеговина</option>
+                </select>
+                <button class="destinations__button" type="button" aria-label="close">close</button>
+              </div>
+
+              <div class="destinations__inner">
+                <label class="destinations__label" for="country-select2" ></label>
+                <select class="destinations__select" name="country" id="country-select2">
+                  <option class="destination__option" value="Чехия" selected>Чехия</option>
+                </select>
+                <button class="destinations__button" type="button" aria-label="close">close</button>
+              </div>
+
+              <div class="destinations__inner">
+                <label class="destinations__label" for="country-select3"></label>
+                <select class="destinations__select" name="country" id="country-select3">
+                  <option class="destination__option" value="">Выберите страну</option>
+                </select>
+                <button class="destinations__button" type="button" aria-label="close">close</button>
+              </div>
+
+              <div class="destinations__inner destinations__inner--add-country">
+                <label class="destinations__label--add-country" for="add-country">
+                  <input class="destinations__input--add-country" type="button" name="add-country" id="add-country" placeholder="Добавить страну">
+                 </label>
+                <button class="destinations-button--add-country" type="button" aria-label="add-country">+</button>
+              </div>
+            </div>
+
+             <a class="plan__link" href="#step3">Следующий шаг</a>
+             <a class="plan__link plan__link--prew" href="#step1">На шаг назад</a>
+
+            <div class="dropdown">
+              <div class="dropdown__inner">
+                <h2 class="dropdown__title">Выберите страну</h2>
+                <button class="dropdown__button" type="button" aria-label="close">Закрыть</button>
+              </div>
+              <div class="dropdown-alphabet">
+                <div class="alphabet-module">
+                  <span class="alphabet-module__letter alphabet-module__letter--active">А</span>
+                  <span class="alphabet-module__letter">Б</span>
+                  <span class="alphabet-module__letter">В</span>
+                  <span class="alphabet-module__letter">Г</span>
+                  <span class="alphabet-module__letter">Д</span>
+                </div>
+                <div class="alphabet-module">
+                  <span class="alphabet-module__letter">Е</span>
+                  <span class="alphabet-module__letter">З</span>
+                  <span class="alphabet-module__letter">И</span>
+                  <span class="alphabet-module__letter">К</span>
+                  <span class="alphabet-module__letter">Л</span>
+                </div>
+                <div class="alphabet-module">
+                  <span class="alphabet-module__letter">М</span>
+                  <span class="alphabet-module__letter">Н</span>
+                  <span class="alphabet-module__letter">О</span>
+                  <span class="alphabet-module__letter">П</span>
+                  <span class="alphabet-module__letter">Р</span>
+                </div>
+                <div class="alphabet-module">
+                  <span class="alphabet-module__letter">С</span>
+                  <span class="alphabet-module__letter">Т</span>
+                  <span class="alphabet-module__letter">У</span>
+                  <span class="alphabet-module__letter">Ф</span>
+                  <span class="alphabet-module__letter">Х</span>
+                </div>
+                <div class="alphabet-module">
+                  <span class="alphabet-module__letter">Ч</span>
+                  <span class="alphabet-module__letter">Ш</span>
+                  <span class="alphabet-module__letter">Э</span>
+                  <span class="alphabet-module__letter">Ю</span>
+                  <span class="alphabet-module__letter">Я</span>
+                </div>
+              </div>
+              <ul class="alphabet__list">
+                <li class="alphabet__item">Австралия</li>
+                <li class="alphabet__item">Австрия</li>
+                <li class="alphabet__item">Азербайджан</li>
+                <li class="alphabet__item">Албания</li>
+                <li class="alphabet__item">Алжир</li>
+                <li class="alphabet__item">Ангола</li>
+                <li class="alphabet__item">Андорра</li>
+                <li class="alphabet__item">Антигуа и Барбуда</li>
+                <li class="alphabet__item">Аргентина</li>
+                <li class="alphabet__item">Армения</li>
+                <li class="alphabet__item">Афганистан</li>
+              </ul>
+            </div>
+          </fieldset>
+
+          <fieldset class="plan plan--entertainment" id="step3">
+            <h2 class="plan__title">Шаг 3.Развлечения</h2>
+            <p class="plan__text">Наконец, расскажите о своих планах времяпровождения.
+               Можно писать в свободной форме и ставить тэги.
+            </p>
+
+            <div class="plan-country">
+              <p class="plan-country__title">Босния и Герцеговина</p>
+              <textarea class="plan-country__textarea" rows="5" cols="33">План действий</textarea>
+            </div>
+
+            <div class="plan-country">
+              <p class="plan-country__title">Чехия</p>
+              <textarea class="plan-country__textarea" rows="5" cols="33">Пить пиво и лазить по старым замкам,
+                 наслаждаться архитектурой и вот это все.
+              </textarea>
+            </div>
+            <button class="plan__button" type="submit">Отправить</button>
+            <a class="plan__link plan__link--prew" href="#step2">На шаг назад</a>
+          </fieldset>
+        </div>
+      </form>
+    </main>
+
+
+    <footer class="page-footer">
+      <div class="container">
+        <a class="page-footer__logo logo" href="https://htmlacademy.ru/intensive/adaptive">Погнали?</a>
+
+        <section class="page-footer__social social social--painted">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">facebook</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="#">vkontakte</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#">instagram</a>
+            </li>
+          </ul>
+        </section>
+
+        <div class="page-footer__copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyryght__link" href="#"><svg></svg></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
