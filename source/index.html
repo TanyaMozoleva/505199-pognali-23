@@ -127,8 +127,8 @@
           </div>
           <ul class="directions__list">
             <li class="directions__item">
-              <article class="country-card country__card--th">
-                <img class="country-card__img country-card__img--th" src="#" width="270" height="110" alt="Таиланд">
+              <article class="country-card country-card--th">
+                <img class="country-card__img country-card__img--th" src="img/thailand-mobile.jpg" width="270" height="110" alt="Таиланд">
                 <div class="country-card__description">
                   <h2 class="country-card__title">Таиланд</h2>
                   <p class="country-card__subtitle">Джунгли зовут!</p>
@@ -137,8 +137,8 @@
               </article>
             </li>
             <li class="directions__item">
-              <article class="country-card country__card--fr">
-                <img class="country-card__img country-card__img--fr" src="#" width="270" height="110" alt="Франция">
+              <article class="country-card country-card--fr">
+                <img class="country-card__img country-card__img--fr" src="img/france-mobile.jpg" width="270" height="110" alt="Франция">
                 <div class="country-card__description">
                   <h2 class="country-card__title">Франция</h2>
                   <p class="country-card__subtitle">Трэ бьен, манифик!</p>
@@ -147,8 +147,8 @@
               </article>
             </li>
             <li class="directions__item">
-              <article class="country-card country__card--cz">
-                <img class="country-card__img country-card__img--cz" src="#" width="270" height="110" alt="Чехия">
+              <article class="country-card country-card--cz">
+                <img class="country-card__img country-card__img--cz" src="img/czech-mobile.jpg" width="270" height="110" alt="Чехия">
                 <div class="country-card__description">
                 <h2 class="country-card__title">Чехия</h2>
                 <p class="country-card__subtitle">Закоулки старой Европы</p>
@@ -171,7 +171,7 @@
           <ul class="travellers__list">
             <li class="travellers__item">
               <article class="user-card">
-                <img class="user-card__img" src="#" width="270" height="270" alt="Фотография пользователя">
+                <img class="user-card__img" src="img/user-card-firsova.jpg" width="270" height="270" alt="Фотография пользователя">
                 <div class="user-card__level level level--number>">
                   <span class="level__number">99</span>
                   <span class="level__text">level</span>
@@ -202,7 +202,7 @@
             </li>
             <li class="travellers__item">
               <article class="user-card">
-                <img class="user-card__img" src="#" width="270" height="270" alt="Фотография пользователя">
+                <img class="user-card__img" src="img/user-card-demin.jpg" width="270" height="270" alt="Фотография пользователя">
                 <div class="user-card__level level level--number">
                   <span class="level__number">80</span>
                   <span class="level__text">level</span>
@@ -253,6 +253,31 @@
           <button class="profile__button" type="button" aria-label="Показать тарифы для бизнеса">
             Показать тарифы для бизнеса
           </button>
+
+          <section class="modal-business">
+            <div class="container>">
+              <h2 class="modal-business__title">Бизнес-тарифы</h2>
+              <ul class="modal-business__list">
+                <li class="modal-business__item">
+                  <p class="modal-business__text">Реклама у блоггера</p>
+                  <p class="modal-business__price">300 000 руб./пост</p>
+                </li>
+                <li class="modal-business__item">
+                  <p class="modal-business__text">Накрутка подписчиков</p>
+                  <p class="modal-business__price">от 1 руб./шт.</p>
+                </li>
+                <li class="modal-business__item">
+                  <p class="modal-business__text">Лайки от ботов</p>
+                  <p class="modal-business__price">от 20 коп./лайк</p>
+                </li>
+                <li class="modal-business__item">
+                  <p class="modal-business__text">Ваш продакт-плейсмент </p>
+                  <p class="modal-business__price">Индивидуально</p>
+                </li>
+              </ul>
+              <button class="modal-business__button" type="button">Закрыть окно</button>
+            </div>
+          </section>
         </div>
       </section>
 
@@ -264,15 +289,15 @@
           </p>
           <form class="promo__form" action="https://echo.htmlacademy.ru/" method="POST">
             <p class="promo__email">
-              <label for="mail"></label>
+              <label for="mail">E-mail</label>
               <input type="email" name="login" id="mail" placeholder="E-mail">
             </p>
-            <button class="promo__button button" aria-label="registration">Регистрация</button>
+            <button class="promo__button button" aria-label="Регистрация">Регистрация</button>
           </form>
           <p class="promo__subtitle">Остались вопросы? Мы с радостью на них ответим!</p>
-          <ul class="promo__contacts contacts">
-            <li class="contact__phone"><a>8 800 555-86-28</a></li>
-            <li class="contact__email"><a>mail@htmlacademy.ru</a></li>
+          <ul class="contacts">
+            <li class="contacts__phone"><a href="#">8 800 555-86-28</a></li>
+            <li class="contacts__email"><a href="#">mail@htmlacademy.ru</a></li>
           </ul>
         </div>
       </section>
@@ -281,7 +306,7 @@
         <div class="container">
           <p class="address__text">ул. Большая Конюшенная, 19/8</p>
           <a class="address__button button" href="#">Проложить маршрут</a>
-          <img class="address_map" src="#" width="320" height="424">
+          <img class="address__map" src="#" width="320" height="424" alt="Местоположение на карте">
         </div>
       </section>
     </main>
@@ -304,36 +329,11 @@
           </ul>
         </section>
 
-        <div class="page-footer__copyright">
+        <div class="copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyryght__link" href="#"><svg></svg></a>
         </div>
       </div>
     </footer>
-
-    <section class="modal-business">
-      <div class="wrapper>">
-        <h2 class="modal-business__title">Бизнес-тарифы</h2>
-        <ul class="modal-business__list">
-          <li class="modal-business__item">
-            <p class="modal-business__text">Реклама у блоггера</p>
-            <p class="modal-business__price">300 000 руб./пост</p>
-          </li>
-          <li class="modal-business__item">
-            <p class="modal-business__text">Накрутка подписчиков</p>
-            <p class="modal-business__price">от 1 руб./шт.</p>
-          </li>
-          <li class="modal-business__item">
-            <p class="modal-business__text">Лайки от ботов</p>
-            <p class="modal-business__price">от 20 коп./лайк</p>
-          </li>
-          <li class="modal-business__item">
-            <p class="modal-business__text">Ваш продакт-плейсмент </p>
-            <p class="modal-business__price">Индивидуально</p>
-          </li>
-        </ul>
-        <button class="modal-business__button" type="button">Закрыть окно</button>
-      </div>
-    </section>
   </body>
 </html>
