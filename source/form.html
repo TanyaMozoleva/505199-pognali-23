@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Форма/Погнали</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <div class="page-header__inner">
+          <a class="page-header__logo" href="https://htmlacademy.ru/intensive/adaptive">Погнали?</a>
+          <button class="page-header__open page-header__burger" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <h1 class="page-header__text">Направления</h1>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">О сервисе</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Направления</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Попутчики</a>
+            </li>
+          </ul>
+
+          <a class="main-nav__authorization" href="#">Авторизация</a>
+
+          <ul class="main-nav__contacts contacts">
+            <li class="contact__item">
+              <a class="contact__phone" href="tel:+78005558628">8 800 555-86-28</a>
+            </li>
+            <li class="contact__item">
+              <a class="contact__email" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </li>
+          </ul>
+
+          <section class="social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="#">facebook</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="#">vkontakte</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="#">instagram</a>
+              </li>
+            </ul>
+          </section>
+
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+
+      <section class="user-section">
+        <div class="container">
+          <div class="user-section__level level">
+            <span class="level__number">80</span>
+            <span class="level__text">level</span>
+          </div>
+          <img class="user-section__avatar" src="img/user-section-demin.jpg" width="100" height="100" alt="Фотография пользователя">
+
+          <button class="user-section__button" type="button" aria-label="Сменить фото пользователя">Сменить фото</button>
+          <div class="user-section__tags tags">
+            <h2 class="tags__title">Теги</h2>
+            <label class="tags__label" for="tags"></label>
+            <textarea id="tags" name="tags" rows="5" cols="33">#бургер #бар #футбол #концерт #крафт</textarea>
+          </div>
+          <form class="user-section__form" action="https://echo.htmlacademy.ru/" method="POST">
+            <fieldset class="user-section__travel-mods travel-mods">
+              <h2 class="travel-mods__title">Транспорт</h2>
+              <ul class="travel-mods__transport transport">
+                <li class="transport__item">
+                  <label class="transport__label">
+                    <input class="transport__input" type="checkbox" name="Транспорт" value="Самолет" checked>Самолет
+                  </label>
+                </li>
+                <li class="transport__item">
+                  <label class="transport__label">
+                    <input class="transport__input" type="checkbox" name="Транспорт" value="Автобус" checked>Автобус
+                  </label>
+                </li>
+                <li class="transport__item">
+                  <label class="transport__label">
+                    <input class="transport__input" type="checkbox" name="Транспорт" value="Велосипед">Велосипед
+                  </label>
+                </li>
+                <li class="transport__item">
+                  <label class="transport__label">
+                    <input class="transport__input" type="checkbox" name="Транспорт" value="Пешком" checked>Пешком
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+
+      <section class="user-plans">
+        <div class="container">
+          <h2 class="user-plans__title">Мои планы:</h2>
+          <ul class="user-plans__list">
+            <li class="user-plans__item">
+              <p class="user-plans__place">Франция, Италия</p>
+              <p class="user-plans__fellow-travellers">3 попутчика</p>
+              <p class="user-plans__dates">26 мар — 29 мар</p>
+              <a class="user-plans__link" href="#">Изменить</a>
+            </li>
+            <li class="user-plans__item">
+              <p class="user-plans__place">Таиланд, Индонезия</p>
+              <p class="user-plans__fellow-travellers">1 попутчик</p>
+              <p class="user-plans__dates">1 июл — 15 июл</p>
+              <a class="user-plans__link" href="#">Изменить</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <form class="plans" action="https://echo.htmlacademy.ru/" method="POST">
+        <div class="container">
+          <h2 class="plans__title">Добавить план:</h2>
+
+          <div class="controls">
+            <ul class="controls__list">
+              <li class="controls__item">Даты</li>
+              <li class="controls__item">Маршрут</li>
+              <li class="controls__item">Развлечения</li>
+            </ul>
+          </div>
+
+          <fieldset class="plan plan--dates" id="step1">
+            <h2 class="plan__title">Шаг 1. Даты пребывания</h2>
+            <p class="plan__text">Укажите предпочтительное количество попутчиков, которых
+                вы хотели бы позвать в поездку, и ее предполагаемую длительность.
+            </p>
+
+            <div class="plan__counter counter plan__counter--companion">
+              <label class="counter__label" for="number-companion">
+                Ищу попутчиков:
+                <span class="counter__units">чел.</span>
+              </label>
+              <div class="counter__inner">
+                <button class="counter__button counter__button--decrease" type="button" aria-label="Уменьшить количество">-</button>
+                <input class="counter__number" type="number" value="2" id="number-companion">
+                <button class="counter__button counter__button--increase" type="button" aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+
+            <div class="plan__counter counter plan__counter--days ">
+              <label class="counter__label" for="number-days">
+                Длительность:
+                <span class="counter__units">дн.</span>
+              </label>
+              <div class="counter__inner">
+                <button class="counter__button counter__button--decrease" type="button" aria-label="Уменьшить количество">-</button>
+                <input class="counter__number" type="number" value="3" id="number-days">
+                <button class="counter__button counter__button--increase" type="button" aria-label="Увеличить количество">+</button>
+              </div>
+            </div>
+
+            <div class="kids-box">
+              <input class="kids-box__allowed" type="checkbox" name="kids" id="kids" checked>
+              <label for="kids">Можно с детьми</label>
+            </div>
+
+
+            <div class="calendar">
+
+              <div class="month">
+                <div class="month__control--prew"></div>
+                <h2 class="month__title">Март 2019</h2>
+                <div class="month__control--next"></div>
+              </div>
+
+              <ul class="days-of-the-week">
+                <li class="days-of-the-week__day">П</li>
+                <li class="days-of-the-week__day">В</li>
+                <li class="days-of-the-week__day">С</li>
+                <li class="days-of-the-week__day">Ч</li>
+                <li class="days-of-the-week__day">П</li>
+                <li class="days-of-the-week__day days-of-the-week__day--off">С</li>
+                <li class="days-of-the-week__day days-of-the-week__day--off">В</li>
+              </ul>
+
+              <div class="weeks">
+                <ul class="weeks__list">
+                  <li class="weeks__item"><button class="weeks__button" type="button">23</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">24</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">25</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">26</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">27</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">28</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">1</button></li>
+                </ul>
+
+                <ul class="weeks__list">
+                  <li class="weeks__item"><button class="weeks__button" type="button">2</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">3</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">4</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">5</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">6</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">7</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">8</button></li>
+                </ul>
+
+                <ul class="weeks__list">
+                  <li class="weeks__item"><button class="weeks__button" type="button">9</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">10</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">11</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">12</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">13</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">14</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">15</button></li>
+                </ul>
+
+                <ul class="weeks">
+                  <li class="weeks__item"><button class="weeks__button" type="button">16</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">17</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">18</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">19</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">20</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">21</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">22</button></li>
+                </ul>
+
+                <ul class="weeks__list">
+                  <li class="weeks__item"><button class="weeks__button" type="button">23</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">24</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">25</button></li>
+                  <li class="weeks__item"><button class="weeks__button weeks__button--active" type="button">26</button></li>
+                  <li class="weeks__item"><button class="weeks__button weeks__button--active" type="button">27</button></li>
+                  <li class="weeks__item"><button class="weeks__button weeks__button--active" type="button">28</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">29</button></li>
+                </ul>
+
+                <ul class="weeks__list">
+                  <li class="weeks__item"><button class="weeks__button" type="button">30</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">31</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">1</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">2</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">3</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">4</button></li>
+                  <li class="weeks__item"><button class="weeks__button" type="button">5</button></li>
+                </ul>
+              </div>
+            </div>
+
+            <a class="plan__link" href="#step2">Следующий шаг</a>
+          </fieldset>
+
+          <fieldset class="plan plan--route" id="step2">
+
+            <h2 class="plan__title">Шаг 2. Маршрут</h2>
+            <p class="plan__text">Укажите страны, которые вы хотели бы посетить.
+               Это может быть одна или сразу несколько.
+            </p>
+
+            <div class="destinations">
+              <div class="destinations__inner">
+                <label class="destinations__label" for="country-select1"></label>
+                <select class="destinations__select" name="country" id="country-select1">
+                  <option class="destinations__option" value="Босния и Герцеговина" selected>Босния и Герцеговина</option>
+                </select>
+                <button class="destinations__button" type="button" aria-label="close">close</button>
+              </div>
+
+              <div class="destinations__inner">
+                <label class="destinations__label" for="country-select2" ></label>
+                <select class="destinations__select" name="country" id="country-select2">
+                  <option class="destinations__option" value="Чехия" selected>Чехия</option>
+                </select>
+                <button class="destinations__button" type="button" aria-label="Закрыть">close</button>
+              </div>
+
+              <div class="destinations__inner">
+                <label class="destinations__label" for="country-select3"></label>
+                <select class="destinations__select" name="country" id="country-select3">
+                  <option class="destinations__option" value="">Выберите страну</option>
+                </select>
+                <button class="destinations__button" type="button" aria-label="close">close</button>
+              </div>
+
+              <div class="destinations__inner destinations__inner--add-country">
+                <button class="destinations__button destinations__button--add-country" type="button" aria-label="Добавить страну">Добавить страну+</button>
+              </div>
+            </div>
+
+             <a class="plan__link" href="#step3">Следующий шаг</a>
+             <a class="plan__link plan__link--prew" href="#step1">На шаг назад</a>
+
+            <div class="dropdown">
+              <div class="dropdown__inner">
+                <h2 class="dropdown__title">Выберите страну</h2>
+                <button class="dropdown__button" type="button" aria-label="Закрыть">Закрыть</button>
+              </div>
+              <div class="dropdown-alphabet">
+                <ul class="alphabet">
+                  <li class="alphabet__item">
+                    <button class="alphabet__button alphabet__button--active" type="button">А</button>
+                    <ul class="countries">
+                      <li class="countries__item">Австралия</li>
+                      <li class="countries__item">Австрия</li>
+                      <li class="countries__item">Азербайджан</li>
+                      <li class="countries__item">Албания</li>
+                      <li class="countries__item">Алжир</li>
+                      <li class="countries__item">Ангола</li>
+                      <li class="countries__item">Андорра</li>
+                      <li class="countries__item">Антигуа и Барбуда</li>
+                      <li class="countries__item">Аргентина</li>
+                      <li class="countries__item">Армения</li>
+                      <li class="countries__item">Афганистан</li>
+                    </ul>
+                  </li>
+                  <li class="alphabet__item"><button class="alphabet__button" type="button">Б</button></li>
+                  <li class="alphabet__item"><button class="alphabet__button" type="button">В</button></li>
+                  <li class="alphabet__item"><button class="alphabet__button" type="button">Г</button></li>
+                  <li class="alphabet__item"><button class="alphabet__button" type="button">Д</button></li>
+                </ul>
+                <ul class="alphabet">
+                  <li class="alphabet__item"><button class="alphabet__button" type="button">Е</button></li>
+                  <li class="alphabet__item"><button class="alphabet__button" type="button">З</button></li>
+                  <li class="alphabet__item"><button class="alphabet__button" type="button">И</button></li>
+                  <li class="alphabet__item"><button class="alphabet__button" type="button">К</button></li>
+                  <li class="alphabet__item"><button class="alphabet__button" type="button">Л</button></li>
+                </ul>
+                <ul class="alphabet">
+                  <li class="alphabet__item"><button class="alphabet__button" type="button">М</button></li>
+                  <li class="alphabet__item"><button class="alphabet__button" type="button">Н</button></li>
+                  <li class="alphabet__item"><button class="alphabet__button" type="button">О</button></li>
+                  <li class="alphabet__item"><button class="alphabet__button" type="button">П</button></li>
+                  <li class="alphabet__item"><button class="alphabet__button" type="button">Р</button></li>
+                </ul>
+                <ul class="alphabet">
+                  <li class="alphabet__item"><button class="alphabet__button" type="button">С</button></li>
+                  <li class="alphabet__item"><button class="alphabet__button" type="button">Т</button></li>
+                  <li class="alphabet__item"><button class="alphabet__button" type="button">У</button></li>
+                  <li class="alphabet__item"><button class="alphabet__button" type="button">Ф</button></li>
+                  <li class="alphabet__item"><button class="alphabet__button" type="button">Х</button></li>
+                </ul>
+                <ul class="alphabet">
+                  <li class="alphabet__item"><button class="alphabet__button" type="button">Ч</button></li>
+                  <li class="alphabet__item"><button class="alphabet__button" type="button">Ш</button></li>
+                  <li class="alphabet__item"><button class="alphabet__button" type="button">Э</button></li>
+                  <li class="alphabet__item"><button class="alphabet__button" type="button">Ю</button></li>
+                  <li class="alphabet__item"><button class="alphabet__button" type="button">Я</button></li>
+                </ul>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="plan plan--entertainment" id="step3">
+            <h2 class="plan__title">Шаг 3.Развлечения</h2>
+            <p class="plan__text">Наконец, расскажите о своих планах времяпровождения.
+               Можно писать в свободной форме и ставить тэги.
+            </p>
+
+            <div class="plan-country">
+              <p class="plan-country__title">Босния и Герцеговина</p>
+              <textarea class="plan-country__textarea" rows="5" cols="33">План действий</textarea>
+            </div>
+
+            <div class="plan-country">
+              <p class="plan-country__title">Чехия</p>
+              <textarea class="plan-country__textarea" rows="5" cols="33">Пить пиво и лазить по старым замкам,
+                 наслаждаться архитектурой и вот это все.
+              </textarea>
+            </div>
+            <button class="plan__button" type="submit">Отправить</button>
+            <a class="plan__link plan__link--prew" href="#step2">На шаг назад</a>
+          </fieldset>
+        </div>
+      </form>
+    </main>
+
+
+    <footer class="page-footer">
+      <div class="container">
+        <a class="page-footer__logo logo" href="https://htmlacademy.ru/intensive/adaptive">Погнали?</a>
+
+        <section class="page-footer__social social social--painted">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">facebook</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="#">vkontakte</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#">instagram</a>
+            </li>
+          </ul>
+        </section>
+
+        <div class="copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="#"><svg></svg></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
