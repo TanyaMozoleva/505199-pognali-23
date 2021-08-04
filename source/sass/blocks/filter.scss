@@ -1,0 +1,27 @@
+.filter {
+  background-color: var(--background);
+}
+
+.filter__inner {
+  background-color: var(--special-yellow);
+}
+
+.filter__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  color: var(--basic-blue-light);
+}
+
+.filter__button {
+  @include btn-reset;
+  width: 230px;
+  height: 41px;
+  border-radius: 25px;
+  background-color: var(--basic-white);
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  color: var(--basic-blue);
+  text-transform: uppercase;
+}

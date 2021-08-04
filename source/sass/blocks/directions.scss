@@ -1,0 +1,31 @@
+.directions {
+  background-color: var(--background);
+  border-radius: 25px;
+  padding-bottom: 34px;
+}
+
+.directions__list {
+  margin-bottom: 27px
+}
+
+.directions__item {
+  margin-bottom: 11px;
+}
+
+.directions__title {
+  margin: 0;
+  padding-top: 71px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--special-orange);
+  margin-bottom: 19px;
+}
+
+.directions__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--special-grey);
+  margin-bottom: 60px;
+}

@@ -1,0 +1,27 @@
+.country-card__description {
+  width: 270px;
+  min-height: 87px;
+  border-radius: 10px;
+  background-color: var(--basic-white);
+}
+
+.country-card__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+}
+.country-card__subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--grey-opacity);
+}
+
+.country-card__number {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--blue-opacity);
+}

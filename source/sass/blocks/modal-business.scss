@@ -1,0 +1,42 @@
+.modal-business {
+  background-color: var(--basic-white);
+  width: 270px;
+  height: 443px;
+  border-radius: 20px;
+}
+
+.modal-business__title {
+  font-weight: 700px;
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--special-orange);
+  margin-left: 51px;
+}
+
+.modal-business__item {
+  margin-bottom: 22px;
+  margin-left: 25px;
+}
+
+.modal-business__text,
+.modal-business__price {
+  margin: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--special-grey);
+}
+
+.modal-business__button {
+  @include btn-reset;
+  width: 270px;
+  height: 59px;
+  background-color: var(--business-button-background);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-blue-light);
+  text-transform: uppercase;
+
+}
+

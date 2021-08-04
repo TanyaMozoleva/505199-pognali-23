@@ -1,1 +1,79 @@
-// Начните писать стили здесь
+// Global
+
+@import "global/normalize";
+@import "global/variables.scss";
+@import "global/mixins.scss";
+@import "global/fonts.scss";
+@import "global/global.scss";
+
+// Blocks
+
+//Blocks//header//index
+
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/contacts.scss";
+
+//Blocks//main//index
+
+@import "blocks/about-us.scss";
+@import "blocks/steps.scss";
+@import "blocks/service.scss";
+@import "blocks/directions.scss";
+@import "blocks/country-card.scss";
+@import "blocks/button.scss";
+@import "blocks/travellers.scss";
+@import "blocks/user-card.scss";
+@import "blocks/level.scss";
+@import "blocks/profile.scss";
+@import "blocks/promo.scss";
+@import "blocks/address.scss";
+
+//Blocks//main//form
+
+@import "blocks/user-section.scss";
+@import "blocks/tags.scss";
+@import "blocks/travel-mods.scss";
+@import "blocks/user-plans.scss";
+@import "blocks/plans.scss";
+@import "blocks/controls.scss";
+@import "blocks/plan.scss";
+@import "blocks/counter.scss";
+@import "blocks/kids-box.scss";
+@import "blocks/destinations.scss";
+@import "blocks/dropdown.scss";
+@import "blocks/alphabet.scss";
+@import "blocks/countries.scss";
+@import "blocks/plan-country.scss";
+
+//Blocks//main//catalog
+
+@import "blocks/country-filter.scss";
+@import "blocks/continents.scss";
+@import "blocks/filter.scss";
+@import "blocks/collapse.scss";
+@import "blocks/content.scss";
+@import "blocks/companions.scss";
+@import "blocks/companion-card.scss";
+@import "blocks/likes.scss";
+@import "blocks/companions-country.scss";
+@import "blocks/transport-preferences.scss";
+@import "blocks/pagination.scss";
+
+//Blocks//range-controls
+@import "blocks/range-controls.scss";
+
+//Blocks//calendar
+
+@import "blocks/month.scss";
+@import "blocks/days-of-the-week.scss";
+@import "blocks/weeks.scss";
+
+//Blocks//footer//index
+
+@import "blocks/page-footer.scss";
+@import "blocks/copyright.scss";
+
+//Blocks//modal//index
+
+@import "blocks/modal-business.scss";

@@ -1,0 +1,19 @@
+.tags__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-blue-light);
+  text-transform: uppercase;
+}
+
+.tags__label {
+  @include visually-hidden;
+}
+
+.tags__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--special-grey);
+  background-color: var(--background);
+}

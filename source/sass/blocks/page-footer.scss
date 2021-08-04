@@ -1,0 +1,28 @@
+.page-footer {
+  background-color: var(--basic-white);
+  border-radius: 25px 25px 0 0;
+  padding-top: 37px;
+}
+
+.page-footer__logo {
+  display: flex;
+  width: 96px;
+  height: 16px;
+  background-image: url(../../img/logo-mobile.svg);
+  background-repeat: no-repeat;
+  margin-left: 87px;
+  margin-bottom: 40px;
+}
+
+.page-footer__social {
+  margin-left: 67px;
+  margin-bottom: 37px;
+}
+
+.page-footer__link {
+  display: flex;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: var(--basic-yellow);
+}

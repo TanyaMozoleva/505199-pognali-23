@@ -1,0 +1,26 @@
+.counter__label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--basic-blue-light);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  margin-right: 34px;
+}
+
+.counter__units {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--basic-blue-light-opacity);
+  text-transform: uppercase;
+}
+
+.counter__number {
+  width: 220px;
+  height: 43px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  color: var(--basic-blue-light);
+}

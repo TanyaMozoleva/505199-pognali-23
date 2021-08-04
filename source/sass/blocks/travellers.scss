@@ -1,0 +1,44 @@
+.travellers {
+  border-radius: 25px;
+  background-color: var(--dark-blue);
+  padding-top: 68px;
+  padding-bottom: 31px;
+}
+
+.travellers__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--special-orange);
+  margin: 0;
+  margin-bottom: 19px;
+  margin-left: 24px;
+}
+
+.travellers__description {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--basic-white);
+  margin: 0;
+  margin-bottom: 25px;
+  margin-left: 24px;
+}
+
+.travellers__text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--basic-white);
+  margin: 0;
+  margin-bottom: 54px;
+  margin-left: 24px;
+}
+
+.travellers__list {
+  margin-bottom: 20px;
+}
+
+.travellers__item {
+  margin-bottom: 9px;
+}

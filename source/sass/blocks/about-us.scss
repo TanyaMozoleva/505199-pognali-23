@@ -1,0 +1,71 @@
+
+.about-us {
+  background-color: var(--basic-blue);
+  background-image: url("../../img/globe-back-mobile\ 1.png");
+  background-repeat: no-repeat;
+}
+
+.about-us__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  color: var(--basic-white);
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 245px;
+}
+
+.about-us__list {
+  margin-bottom: 28px;
+}
+
+.about-us__link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: var(--special-orange);
+}
+
+.about-us__link--phone {
+  background-image: url("../../img/icons/icon-calling-phone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-us__link--email {
+  background-color: var(--special-yellow-dark);
+  background-image: url("../../img/icons/icon-email.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-us__link--authorization {
+  background-color: var(--basic-yellow);
+  width: 190px;
+  height: 40px;
+  border-radius: 25px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding-top: 12px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--basic-blue);
+}
+
+.about-us__review {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--basic-white);
+}
+
+.about-us__author {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--basic-white);
+}

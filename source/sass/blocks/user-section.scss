@@ -1,0 +1,31 @@
+.user-section {
+  background-color: var(--background);
+}
+
+.user-section__number {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 38px;
+  color: var(--basic-blue);
+}
+
+.user-section__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: var(--special-grey);
+}
+
+.user-section__button {
+  @include btn-reset;
+  width: 270px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: var(--special-blue-light);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 18px;
+  color: var(--basic-blue);
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}

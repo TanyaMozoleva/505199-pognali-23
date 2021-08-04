@@ -1,0 +1,30 @@
+.destinations__inner {
+  margin-bottom: 22px;
+}
+
+.destinations__label {
+  @include visually-hidden;
+}
+
+.destinations__select {
+  width: 168px;
+  height: 42px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-blue-light);
+  text-transform: uppercase;
+}
+
+.destinations__button--add-country {
+  @include btn-reset;
+  width: 220px;
+  height: 42px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-blue-light);
+  text-transform: uppercase;
+  background-color: var(--background);
+
+}
