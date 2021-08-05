@@ -4,10 +4,6 @@
   list-style: none;
 }
 
-@mixin visually-hidden {
-  display: none;
-}
-
 @mixin btn-reset {
   border: none;
   background: transparent;

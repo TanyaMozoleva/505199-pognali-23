@@ -7,6 +7,5 @@
 }
 
 .controls__text {
-  @include visually-hidden;
   color: var(--basic-blue-light);
 }

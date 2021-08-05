@@ -27,22 +27,28 @@
           </button>
           <h1 class="page-header__text">Направления</h1>
         </div>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">О сервисе</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Направления</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Попутчики</a>
+        <div class="page-header__content">
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">О сервисе</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Направления</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="catalog.html">Попутчики</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="user-block">
+            <li class="user-block__item">
+              <a class="user-block__authorization" href="#">Авторизация</a>
             </li>
           </ul>
 
-          <a class="main-nav__authorization" href="#">Авторизация</a>
-
-          <ul class="main-nav__contacts contacts">
+          <ul class="page-header__contacts contacts">
             <li class="contacts__item">
               <a class="contacts__phone" href="tel:+78005558628">8 800 555-86-28</a>
             </li>
@@ -64,8 +70,7 @@
               </li>
             </ul>
           </section>
-
-        </nav>
+        </div>
       </div>
     </header>
 
@@ -82,7 +87,7 @@
           <button class="user-section__button" type="button" aria-label="Сменить фото пользователя">Сменить фото</button>
           <div class="user-section__tags tags">
             <h2 class="tags__title">Теги</h2>
-            <label class="tags__label" for="tags">Теги</label>
+            <label class="tags__label visually-hidden" for="tags">Теги</label>
             <textarea class="tags__text" id="tags" name="tags" rows="5" cols="33">#бургер #бар #футбол #концерт #крафт</textarea>
           </div>
           <form class="user-section__form" action="https://echo.htmlacademy.ru/" method="POST">
@@ -141,9 +146,9 @@
 
           <div class="plans__controls controls">
             <ul class="controls__list">
-              <li class="controls__item"><a class="controls__link>" href="#"><span class="controls__text">Даты</span></a></li>
-              <li class="controls__item"><a class="controls__link>" href="#"><span class="controls__text">Маршрут</span></a></li>
-              <li class="controls__item"><a class="controls__link>" href="#"><span class="controls__text">Развлечения</span></a></li>
+              <li class="controls__item"><a class="controls__link>" href="#"><span class="controls__text visually-hidden">Даты</span></a></li>
+              <li class="controls__item"><a class="controls__link>" href="#"><span class="controls__text visually-hidden">Маршрут</span></a></li>
+              <li class="controls__item"><a class="controls__link>" href="#"><span class="controls__text visually-hidden">Развлечения</span></a></li>
             </ul>
           </div>
 
@@ -276,7 +281,7 @@
 
             <div class="destinations">
               <div class="destinations__inner">
-                <label class="destinations__label" for="country-select1">Выберите страну</label>
+                <label class="destinations__label visually-hidden" for="country-select1">Выберите страну</label>
                 <select class="destinations__select" name="country" id="country-select1">
                   <option class="destinations__option" value="Босния и Герцеговина" selected>Босния и Герцеговина</option>
                 </select>
@@ -284,7 +289,7 @@
               </div>
 
               <div class="destinations__inner">
-                <label class="destinations__label" for="country-select2">Выберите страну</label>
+                <label class="destinations__label visually-hidden" for="country-select2">Выберите страну</label>
                 <select class="destinations__select" name="country" id="country-select2">
                   <option class="destinations__option" value="Чехия" selected>Чехия</option>
                 </select>
@@ -292,7 +297,7 @@
               </div>
 
               <div class="destinations__inner">
-                <label class="destinations__label" for="country-select3">Выберите страну</label>
+                <label class="destinations__label visually-hidden" for="country-select3">Выберите страну</label>
                 <select class="destinations__select" name="country" id="country-select3">
                   <option class="destinations__option" value="">Выберите страну</option>
                 </select>

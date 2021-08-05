@@ -6,10 +6,6 @@
   text-transform: uppercase;
 }
 
-.tags__label {
-  @include visually-hidden;
-}
-
 .tags__text {
   font-weight: 400;
   font-size: 16px;

@@ -1,4 +1,5 @@
 .page-header__inner {
+  min-height: 73px;
   background-color: var(--basic-blue);
 }
 
@@ -7,4 +8,8 @@
   font-size: 36px;
   line-height: 36px;
   color: var(--basic-white);
+}
+
+.page-header__contacts {
+  margin-bottom: 50px;
 }
