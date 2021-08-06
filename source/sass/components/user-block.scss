@@ -1,0 +1,20 @@
+.user-block__authorization {
+  width: 270px;
+  height: 50px;
+  margin-bottom: 61px;
+  padding: 12px 81px 8px 78px;
+  box-sizing: border-box;
+
+  border-radius: 25px;
+
+  background-color: var(--basic-yellow);
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--basic-blue);
+  text-transform: uppercase;
+
+  display: inline-block;
+}

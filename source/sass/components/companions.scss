@@ -1,0 +1,17 @@
+.companions {
+  background-color: var(--background);
+}
+
+.companions__button {
+  @include btn-reset;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  color: var(--basic-blue-light);
+  text-transform: uppercase;
+}
+
+.companions__item {
+  margin-bottom: 10px;
+}

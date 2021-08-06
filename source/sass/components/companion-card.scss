@@ -1,0 +1,47 @@
+.companion-card {
+  border-radius: 20px;
+
+  background-color: var(--basic-white);
+}
+
+.companion-card__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--basic-blue-light);
+}
+
+.companion-card__tag {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--special-grey);
+}
+
+.companion-card__text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  color: var(--special-grey);
+  text-transform: lowercase;
+}
+
+.companion-card__button {
+  @include btn-reset;
+
+  width: 230px;
+  height: 40px;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  box-sizing: border-box;
+
+  border-radius: 25px;
+
+  background-color: var(--basic-yellow);
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  color: var(--basic-blue);
+  text-transform: uppercase;
+}
