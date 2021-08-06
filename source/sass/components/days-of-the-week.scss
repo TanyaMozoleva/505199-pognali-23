@@ -1,0 +1,10 @@
+.days-of-the-week {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--special-grey);
+}
+
+.days-of-the-week__day--off {
+  color: var(--basic-red);
+}

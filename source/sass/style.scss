@@ -1,1 +1,81 @@
-// Начните писать стили здесь
+// Global
+
+@import "global/normalize";
+@import "utils/variables.scss";
+@import "utils/mixins.scss";
+@import "global/fonts.scss";
+@import "global/global.scss";
+
+// Blocks
+
+//header//index
+
+@import "layout/page-header.scss";
+@import "components/logo.scss";
+@import "components/main-nav.scss";
+@import "components/user-block.scss";
+@import "components/contacts.scss";
+
+//main//index
+
+@import "components/about-us.scss";
+@import "components/steps.scss";
+@import "components/service.scss";
+@import "components/directions.scss";
+@import "components/country-card.scss";
+@import "components/button.scss";
+@import "components/travellers.scss";
+@import "components/user-card.scss";
+@import "components/level.scss";
+@import "components/profile.scss";
+@import "components/promo.scss";
+@import "components/address.scss";
+
+//main//form
+
+@import "components/user-section.scss";
+@import "components/tags.scss";
+@import "components/travel-mods.scss";
+@import "components/user-plans.scss";
+@import "components/plans.scss";
+@import "components/controls.scss";
+@import "components/plan.scss";
+@import "components/counter.scss";
+@import "components/kids-box.scss";
+@import "components/destinations.scss";
+@import "components/dropdown.scss";
+@import "components/alphabet.scss";
+@import "components/countries.scss";
+@import "components/plan-country.scss";
+
+//main//catalog
+
+@import "components/country-filter.scss";
+@import "components/continents.scss";
+@import "components/filter.scss";
+@import "components/collapse.scss";
+@import "components/content.scss";
+@import "components/companions.scss";
+@import "components/companion-card.scss";
+@import "components/likes.scss";
+@import "components/companions-country.scss";
+@import "components/transport-preferences.scss";
+@import "components/pagination.scss";
+
+//range-controls
+@import "components/range-controls.scss";
+
+//calendar
+
+@import "components/month.scss";
+@import "components/days-of-the-week.scss";
+@import "components/weeks.scss";
+
+//footer//index
+
+@import "layout/page-footer.scss";
+@import "components/copyright.scss";
+
+//modal//index
+
+@import "components/modal-business.scss";

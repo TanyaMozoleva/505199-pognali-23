@@ -1,0 +1,20 @@
+.contacts__phone,
+.contacts__email {
+  margin-left: 61px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--dark-blue);
+  text-transform: uppercase;
+}
+
+.contacts__phone::before {
+  content: "";
+  width: 45px;
+  height: 45px;
+
+  border-radius: 50px;
+
+  background-color: var(--dark-blue);
+}
