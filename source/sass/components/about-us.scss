@@ -5,6 +5,13 @@
   background-repeat: no-repeat;
 }
 
+.about-us__inner {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .about-us__title {
   margin: 0;
   margin-top: 20px;
@@ -13,11 +20,33 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 40px;
+  text-align: center;
   color: var(--basic-white);
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 86px;
+    width: 399px;
+    margin-left: 145px;
+    margin-right: 144px;
+
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 101px;
+  }
 }
 
 .about-us__list {
   margin-bottom: 28px;
+  display: flex;
+  flex-wrap: nowrap;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .about-us__link {
@@ -69,6 +98,14 @@
   font-size: 16px;
   line-height: 22px;
   color: var(--basic-white);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+    padding-left: 32px;
+
+    font-size: 28px;
+    line-height: 33px;
+  }
 }
 
 .about-us__author {
@@ -76,4 +113,12 @@
   font-size: 16px;
   line-height: 22px;
   color: var(--basic-white);
+
+  @media (min-width: $tablet-width) {
+    padding-left: 32px;
+    margin-bottom: 211px;
+
+    font-size: 21px;
+    line-height: 25px;
+  }
 }

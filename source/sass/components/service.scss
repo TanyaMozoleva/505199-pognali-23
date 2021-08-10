@@ -4,6 +4,18 @@
   background-repeat: no-repeat;
 }
 
+.service__inner {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 308px;
+  }
+
+  @media (min-width: $desktop-width) {
+    // display: grid;
+    grid-template-columns: 630px;
+  }
+}
+
 .service__title {
   margin: 0;
   padding-top: 33px;
@@ -26,4 +38,27 @@
   font-size: 16px;
   line-height: 22px;
   color: var(--basic-white);
+}
+
+.service__button {
+  width: 276px;
+  height: 80px;
+  padding-top: 29px;
+  padding-bottom: 27px;
+  padding-left: 32px;
+
+  border-radius: 20px;
+
+  background-color: var(--basic-yellow);
+  color: var(--basic-blue-light);
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

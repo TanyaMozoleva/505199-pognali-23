@@ -13,8 +13,41 @@
 
 .page-header__contacts {
   margin-bottom: 50px;
+  margin-top: 66px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__item {
+  margin-bottom: 27px;
+
+  &:last-child {
+    margin-bottom: 53px;
+  }
 }
 
 .page-header__content {
   background-color: var(--basic-white);
+}
+
+.page-header__social {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 63px;
+    justify-content: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

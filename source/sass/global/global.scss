@@ -1,5 +1,6 @@
 body {
   font-family: "Blogger Sans", "Nunito Sans", sans-serif;
+  min-width: 320px;
 }
 
 ul {
@@ -11,9 +12,21 @@ a {
 }
 
 .container {
-  width: 270px;
+  width: auto;
   margin-left: auto;
   margin-right: auto;
+  padding-right: 25px;
+  padding-left: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
 }
 
 .visually-hidden {
@@ -27,4 +40,10 @@ a {
 
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }

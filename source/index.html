@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Главная/Погнали</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -52,7 +53,7 @@
             </ul>
 
             <ul class="page-header__contacts contacts">
-              <li class="contacts__item">
+              <li class="contacts__item page-header__item">
                 <a class="contacts__phone" href="tel:+78005558628">8 800 555-86-28</a>
               </li>
               <li class="contacts__item">
@@ -60,7 +61,7 @@
               </li>
             </ul>
 
-            <section class="social">
+            <section class="page-header__social social">
               <ul class="social__list">
                 <li class="social__item">
                   <a class="social__link social__link--facebook" href="#">facebook</a>
@@ -82,25 +83,30 @@
 
       <section class="about-us">
         <div class="container">
-          <h1 class="about-us__title">В путешествие с крутыми попутчиками!</h1>
+          <div class="about-us__inner">
+            <h1 class="about-us__title">В путешествие с крутыми попутчиками!</h1>
 
-          <ul class="about-us__list">
-            <li class="about-us__item">
-              <a class="about-us__link about-us__link--phone" href="tel:+78005558628"></a>
-            </li>
-            <li class="about-us__item">
-              <a class="about-us__link about-us__link--email" href="mail@htmlacademy.ru"></a>
-            </li>
-            <li class="about-us__item">
-              <a class="about-us__link about-us__link--authorization" href="#">Авторизация</a>
-            </li>
-          </ul>
+            <ul class="about-us__list">
+              <li class="about-us__item">
+                <a class="about-us__link about-us__link--phone" href="tel:+78005558628"></a>
+              </li>
+              <li class="about-us__item">
+                <a class="about-us__link about-us__link--email" href="mail@htmlacademy.ru"></a>
+              </li>
+              <li class="about-us__item">
+                <a class="about-us__link about-us__link--authorization" href="#">Авторизация</a>
+              </li>
+            </ul>
+            <div class="about-us__quout">
+              <p class="about-us__review">"Лучшее приложение,<br> что я видел в жизни!"</p>
+              <p class="about-us__author">Мурат Эльтазин<br> главный редактор газеты<br> "гаджетлайф"</p>
+            </div>
 
-          <p class="about-us__review">"Лучшее приложение, что я видел в жизни!"</p>
-          <p class="about-us__author">Мурат Эльтазин главный редактор газеты "гаджетлайф"</p>
+
+          </div>
 
           <section class="steps">
-            <div class="container">
+            <div class="steps__container">
               <ul class="steps__list">
                 <li class="steps__item steps__item--chroma1">
                   <h2 class="steps__title">Выберите направление</h2>
@@ -132,13 +138,13 @@
             с попутчиками, которые на одной волне с тобой!Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
             </p>
             <p class="service__text">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
-            <a class="service__button button button--more" href="#">Подробнее</a>
+            <a class="service__button service__button--more" href="#">Подробнее</a>
           </div>
         </div>
       </section>
 
       <section class="directions">
-        <div class="container">
+        <div class="directions__container container">
           <div class="directions__info">
             <h2 class="directions__title">Направления</h2>
             <p class="directions__text">Мы не продаем туры
@@ -180,17 +186,19 @@
               </article>
             </li>
           </ul>
-          <a class="directions__button button" href="#">Показать все</a>
+          <a class="directions__button" href="#">Показать все</a>
         </div>
       </section>
 
       <section class="travellers">
-        <div class="container">
-          <h2 class="travellers__title">Попутчики</h2>
-          <p class="travellers__description">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
-          Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
-          </p>
-          <p class="travellers__text">Теперь можно легко найти единомышленников!</p>
+        <div class="travellers__container container">
+          <div class="travellers__about">
+            <h2 class="travellers__title">Попутчики</h2>
+            <p class="travellers__description">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
+            Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+            </p>
+            <p class="travellers__text">Теперь можно легко найти единомышленников!</p>
+          </div>
           <ul class="travellers__list">
             <li class="travellers__item">
               <article class="user-card">
@@ -257,7 +265,7 @@
         </div>
       </section>
       <section class="profile">
-        <div class="container">
+        <div class="profile__container container">
           <h2 class="profile__title">Добавьте свой профиль</h2>
           <ul class="profile__list">
             <li class="profile__item">
@@ -315,7 +323,7 @@
               <label class="promo__label visually-hidden" for="mail">E-mail</label>
               <input class="promo__input" type="email" name="login" id="mail" placeholder="E-mail">
             </p>
-            <button class="promo__button button" aria-label="Регистрация">Регистрация</button>
+            <button class="promo__button button" aria-label="Регистрация"><span class="visually-hidden" >Регистрация</span></button>
           </form>
           <p class="promo__subtitle">Остались вопросы? Мы с радостью на них ответим!</p>
           <ul class="promo__contacts contacts">
@@ -326,9 +334,11 @@
       </section>
 
       <section class="address">
-        <div class="container">
+        <div class="address__container container">
           <p class="address__text">ул. Большая Конюшенная, 19/8</p>
           <a class="address__button button" href="#">Проложить маршрут</a>
+        </div>
+        <div class="address__map">
           <img class="address__map" src="#" width="320" height="424" alt="Местоположение на карте">
         </div>
       </section>
@@ -336,7 +346,7 @@
 
 
     <footer class="page-footer">
-      <div class="container">
+      <div class="page-footer__container container">
         <a class="page-footer__logo logo" href="https://htmlacademy.ru/intensive/adaptive">
         </a>
         <section class="page-footer__social social social--painted">
@@ -353,7 +363,7 @@
           </ul>
         </section>
 
-        <div class="copyright">
+        <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="#"><svg></svg></a>
         </div>

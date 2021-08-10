@@ -4,6 +4,17 @@
 
 .steps__list {
   padding-bottom: 39px;
+
+  display: grid;
+  grid-template-columns: 270px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 344px 344px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 330px 330px 330px 330px;
+  }
 }
 
 .steps__item {
@@ -11,11 +22,17 @@
   height: 80px;
   padding-top: 22px;
   padding-left: 24px;
+  padding-right: 21px;
 
   box-sizing: border-box;
   border-radius: 5px 5px 0 0;
 
   display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 344px;
+  }
 }
 
 .steps__item--chroma1 {
@@ -37,7 +54,7 @@
 }
 
 .steps__title {
-  margin: 0 0 0 0;
+  margin: 0;
 
   font-weight: 700;
   font-size: 18px;
