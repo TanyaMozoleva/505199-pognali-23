@@ -2,6 +2,10 @@
   background-color: var(--background);
 
   border-radius: 0 0 25px 25px;
+
+  position: relative;
+  top: -20px;
+  z-index: 5;
 }
 
 .directions__container {
@@ -56,6 +60,8 @@
 
   @media (min-width: $tablet-width) {
     width: 618px;
+    margin-right: 35px;
+    margin-left: 35px;
   }
 }
 

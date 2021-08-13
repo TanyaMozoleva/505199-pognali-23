@@ -1,5 +1,12 @@
 .address {
   border-radius: 0 0 25px 25px;
+
+  background-color: var(--basic-yellow);
+
+  position: relative;
+  top: -100px;
+
+  z-index: 1;
 }
 
 .address__container {
@@ -8,7 +15,6 @@
 
   border-radius: 0 0 25px 25px;
 
-  background-color: var(--basic-yellow);
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -22,11 +28,31 @@
   margin-left: 60px;
   width: 143px;
 
+  display: block;
+
+  position: relative;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
   color: var(--basic-blue-light);
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+
+    position: absolute;
+    left: -60px;
+
+    background-color: var(--special-blue-dark);
+    background-image: url("../../img/icons/icon-map-mark.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
 
   @media (min-width: $tablet-width) {
     width: 430px;
@@ -50,6 +76,30 @@
   font-size: 18px;
   line-height: 18px;
 
+  position: relative;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 16px;
+    position: absolute;
+    right: 22px;
+    top: 24px;
+    background-image: url("../../img/icons/icon-arrow-right.svg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    background-color: var(--dark-blue);
+    color: var(--basic-white);
+  }
+
+  &:active {
+    color: var(--basic-white-opacity3);
+  }
+
   @media (min-width: $tablet-width) {
     width: 618px;
     height: 80px;
@@ -64,10 +114,4 @@
   @media (min-width: $desktop-width) {
     width: 324px;
   }
-}
-
-.address__map {
-  height: 424px;
-
-  background-image: url("../../img/background-map.jpg");
 }

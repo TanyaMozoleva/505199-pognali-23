@@ -2,17 +2,21 @@
   background-color: var(--dark-blue);
 
   border-radius: 0 0 25px 25px;
+
+  position: relative;
+  top: -40px;
+
+  z-index: 4;
 }
 
 .travellers__container {
   padding-top: 68px;
-  padding-left: 24px;
   padding-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     padding-top: 141px;
-    padding-left: 24px;
-    padding-right: 34px;
+    padding-left: 74px;
+    padding-right: 74px;
     padding-bottom: 31px;
   }
 
@@ -106,6 +110,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -115,11 +120,15 @@
 }
 
 .travellers__item {
+  width: 270px;
+
   &:not(:last-child) {
     margin-bottom: 9px;
   }
 
   @media (min-width: $tablet-width) {
+    width: 285px;
+
     &:not(:last-child) {
       margin-bottom: 0;
       margin-right: 50px;
@@ -147,7 +156,7 @@
     position: absolute;
     right: 22px;
     top: 25px;
-    background-image: url("/source/img/icons/icon-arrow-right.svg");
+    background-image: url("../../img/icons/icon-arrow-right.svg");
     background-position: 50%;
     background-repeat: no-repeat;
   }

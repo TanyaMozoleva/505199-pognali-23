@@ -1,7 +1,5 @@
 .contacts__phone,
 .contacts__email {
-  margin-left: 61px;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
@@ -9,12 +7,44 @@
   text-transform: uppercase;
 }
 
-.contacts__phone::before {
-  content: "";
-  width: 45px;
-  height: 45px;
+// .contacts__phone {
+//   &::before {
+//     content: "";
+//     width: 45px;
+//     height: 45px;
+//     border-radius: 50px;
 
-  border-radius: 50px;
+//     display: block;
 
-  background-color: var(--dark-blue);
-}
+//     position: absolute;
+
+//     background-color: var(--special-blue-dark);
+//     z-index: 1;
+//   }
+// }
+
+
+// .contacts__link {
+//   &::before {
+//     content: "";
+//     width: 45px;
+//     height: 45px;
+//     border-radius: 50px;
+
+//     display: block;
+
+//     position: absolute;
+
+//     background-color: var(--special-blue-dark);
+//     z-index: 1;
+//   }
+// }
+
+// .contacts__icon-phone-promo {
+//   width: 17px;
+//   height: 15px;
+//   margin-left: 14px;
+//   margin-right: 30px;
+//   fill: var(--basic-yellow);
+//   z-index: 2;
+// }

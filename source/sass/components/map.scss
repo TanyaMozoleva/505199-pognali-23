@@ -1,0 +1,14 @@
+.map {
+  margin: 0 auto;
+  width: 100%;
+
+  position: relative;
+  top: -150px;
+  z-index: 0;
+}
+
+.map__inner {
+  height: 424px;
+  background-image: url("../../img/background-map.jpg");
+  background-repeat: no-repeat;
+}

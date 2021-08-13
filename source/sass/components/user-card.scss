@@ -3,7 +3,9 @@
 }
 
 .user-card__img {
-  border-radius: 10px 10px 0 0;
+  border-radius: 20px 20px 0 0;
+
+  display: block;
 }
 
 .user-card__level {
@@ -18,22 +20,34 @@
 }
 
 .user-card__info {
+  width: 270px;
   padding-top: 27px;
 
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 20px 20px;
 
   background-color: var(--basic-white);
+
+  @media (min-width: $tablet-width) {
+    width: 285px;
+  }
 }
 
 .user-card__title {
   margin: 0;
-  margin-left: 69px;
+  // margin-left: 69px;
   margin-bottom: 15px;
 
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
+  text-align: center;
   color: var(--basic-blue-light);
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 22px;
+    text-align: center;
+  }
 }
 
 .user-card__tags {

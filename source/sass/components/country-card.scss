@@ -1,34 +1,124 @@
 .country-card {
   @media (min-width: $tablet-width) {
+    width: 618px;
     display: flex;
     flex-direction: row-reverse;
   }
 }
 
+.country-card__img {
+  display: block;
+
+  border-radius: 10px 10px 0 0;
+}
+
 .country-card__description {
   width: 270px;
-  min-height: 87px;
+  height: 89px;
+  padding-top: 26px;
+  padding-bottom: 24px;
 
   border-radius: 10px;
 
   background-color: var(--basic-white);
+
+  position: relative;
+  top: -8px;
+
+  display: grid;
+  grid-template-columns: 190px 80px;
+
+  &::before {
+    content: "";
+    width: 35px;
+    height: 24px;
+    border-radius: 3px;
+    display: block;
+    position: absolute;
+    top: -17px;
+    left: 25px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 433px;
+    height: 140px;
+
+    border-radius: 20px 0 0 20px;
+
+    grid-template-columns: 230px;
+  }
+}
+
+.country-card__description--th {
+  &::before {
+    background-image: url("../../img/country-card-th.png");
+
+    @media (min-width: $tablet-width) {
+      top: 17px;
+      left: 398px;
+      z-index: 3;
+    }
+  }
+}
+
+.country-card__description--fr {
+  &::before {
+    background-image: url("../../img/country-card-fr.png");
+
+    @media (min-width: $tablet-width) {
+      top: 17px;
+      left: 398px;
+      z-index: 3;
+    }
+  }
+}
+
+.country-card__description--cz {
+  &::before {
+    background-image: url("../../img/country-card-cz.png");
+
+    @media (min-width: $tablet-width) {
+      top: 17px;
+      left: 398px;
+      z-index: 3;
+    }
+  }
 }
 
 
 .country-card__title {
   margin: 0;
+  margin-bottom: 2px;
+  padding-left: 24px;
 
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
+
+  grid-column: 1 / 2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .country-card__subtitle {
+  margin: 0;
+  padding-left: 25px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   color: var(--grey-opacity);
+
+  grid-column: 1 / 2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .country-card__number {
@@ -36,4 +126,40 @@
   font-size: 16px;
   line-height: 20px;
   color: var(--blue-opacity);
+
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+
+  &::before {
+    content: "";
+    width: 10.5px;
+    height: 12px;
+    display: block;
+    position: absolute;
+    right: 85px;
+    top: 28px;
+
+    background-image: url("../../img/icons/icon-country-card.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 50px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+
+    &::before {
+      width: 18px;
+      height: 20px;
+
+      left: 22px;
+      top: 85px;
+
+      background-size: 18px 20px;
+    }
+  }
 }

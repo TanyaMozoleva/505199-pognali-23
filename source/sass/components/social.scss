@@ -3,3 +3,21 @@
   flex-wrap: nowrap;
   justify-content: center;
 }
+
+.social__link--facebook {
+  background-image: url("../../img/icons/icon-fb.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social__link--vkontakte {
+  background-image: url("../../img/icons/icon-vk.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social__link--instagram {
+  background-image: url("../../img/icons/icon-inst.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

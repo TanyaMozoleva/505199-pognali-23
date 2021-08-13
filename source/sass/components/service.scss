@@ -1,10 +1,18 @@
 .service {
+  border-radius: 0 0 20px 20px;
+
+  position: relative;
+
+  z-index: 6;
+
   background-color: var(--dark-blue);
   background-image: url("../../img/about-mobile.png");
   background-repeat: no-repeat;
 }
 
 .service__inner {
+  padding-bottom: 82px;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 308px;
@@ -24,6 +32,11 @@
   font-size: 24px;
   line-height: 24px;
   color: var(--special-orange);
+
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+    line-height: 45px;
+  }
 }
 
 .service__description {
@@ -31,6 +44,11 @@
   font-size: 16px;
   line-height: 22px;
   color: var(--basic-white);
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+  }
 }
 
 .service__text {
@@ -38,6 +56,11 @@
   font-size: 16px;
   line-height: 22px;
   color: var(--basic-white);
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 25px;
+  }
 }
 
 .service__button {
