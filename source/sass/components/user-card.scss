@@ -1,11 +1,22 @@
 .user-card {
   position: relative;
+
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 9px var(--black-shadow);
+    z-index: 3;
+  }
 }
 
+.user-card__picture,
 .user-card__img {
-  border-radius: 20px 20px 0 0;
+  border-radius: 10px 10px 0 0;
 
   display: block;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 20px 20px 0 0;
+  }
 }
 
 .user-card__level {
@@ -34,8 +45,9 @@
 
 .user-card__title {
   margin: 0;
-  // margin-left: 69px;
   margin-bottom: 15px;
+
+  // position: relative;
 
   font-weight: 700;
   font-size: 21px;
@@ -43,12 +55,55 @@
   text-align: center;
   color: var(--basic-blue-light);
 
+  &::before {
+    content: "";
+    // position: absolute;
+    // left: -12px;
+    // top: -3px;
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+
+    background-color: var(--special-green);
+  }
+
+  // &--unavailable::before {
+  //   content: "";
+  //   position: absolute;
+  //   left: 12px;
+  //   top: 3px;
+
+  //   width: 600px;
+  //   height: 600px;
+  //   border-radius: 50%;
+
+  //   background-color: var(--special-red);
+  // }
+
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 22px;
     text-align: center;
   }
 }
+
+// .user-card__title--available {
+//   position: relative;
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     left: -12px;
+//     top: -3px;
+
+//     width: 6px;
+//     height: 6px;
+//     border-radius: 50%;
+
+//     background-color: var(--special-green);
+//   }
+// }
 
 .user-card__tags {
   width: 186px;
@@ -64,4 +119,8 @@
 
   display: flex;
   flex-wrap: wrap;
+}
+
+.user-card__travel-mod {
+  position: relative;
 }

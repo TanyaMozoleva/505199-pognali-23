@@ -1,17 +1,15 @@
 .page-footer {
-  height: 239px;
+  min-height: 239px;
   padding-top: 37px;
   padding-bottom: 17px;
 
   position: relative;
-  // top: -170px;
+  top: -170px;
 
   z-index: 1;
 
   background-color: var(--basic-white);
   border-radius: 25px 25px 0 0;
-
-  border: 5px solid red;
 
   @media (min-width: $tablet-width) {
     min-height: 140px;
@@ -52,7 +50,7 @@
   justify-content: center;
 
   @media (min-width: $tablet-width) {
-    margin-left: 0;
+    margin: 0;
   }
 }
 

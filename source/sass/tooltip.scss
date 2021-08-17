@@ -1,0 +1,24 @@
+.tooltip {
+  &::after {
+    padding-top: 18px;
+    padding-bottom: 18px;
+
+    content: attr(data-tooltip);
+    position: absolute;
+    visibility: hidden;
+
+    border-radius: 4px;
+
+    background-color: var(--tooltip-background);
+    color: var(--basic-white);
+
+    font-weight: 400px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+
+    &:hover {
+      visibility: visible;
+    }
+  }
+}

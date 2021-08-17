@@ -5,4 +5,10 @@
   font-size: 14px;
   line-height: 18px;
   color: var(--grey-opacity);
+  text-align: center;
+}
+
+.weeks__list {
+  display: flex;
+  flex-wrap: nowrap;
 }

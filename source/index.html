@@ -24,7 +24,7 @@
             <path d="M93.1598 12.7451C93.1598 13.9835 92.1101 14.9875 90.8153 14.9875C89.5204 14.9875 88.4707 13.9835 88.4707 12.7451C88.4707 11.5066 89.5204 10.5027 90.8153 10.5027C92.1101 10.5027 93.1598 11.5066 93.1598 12.7451Z" fill="currentColor"/>
             </svg>
           </a>
-          <button class="page-header__open page-header__burger" type="button">
+          <button class="page-header__burger page-header__burger--open page-header__burger--close" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
@@ -157,7 +157,10 @@
           <ul class="directions__list">
             <li class="directions__item">
               <article class="country-card country-card--th">
-                <img class="country-card__img country-card__img--th" src="img/thailand-mobile.jpg" width="270" height="110" alt="Таиланд">
+                <picture class="country-card__picture">
+                  <source media="(min-width: 768px)" srcset="img/thailand-desktop.jpg 1x, img/thailand-desktop@2x.jpg 2x">
+                  <img class="country-card__img country-card__img--th" src="img/thailand-mobile.jpg" srcset="img/thailand-mobile-1@2x.jpg 2x" alt="Таиланд">
+                </picture>
                 <div class="country-card__description country-card__description--th">
                   <h2 class="country-card__title">Таиланд</h2>
                   <p class="country-card__subtitle">Джунгли зовут!</p>
@@ -167,7 +170,10 @@
             </li>
             <li class="directions__item">
               <article class="country-card country-card--fr">
-                <img class="country-card__img country-card__img--fr" src="img/france-mobile.jpg" width="270" height="110" alt="Франция">
+                <picture class="country-card__picture">
+                  <source media="(min-width: 768px)" srcset="img/france-desktop-2.jpg 1x, img/france-desktop-2@2x.jpg 2x">
+                  <img class="country-card__img country-card__img--fr" src="img/france-mobile.jpg" srcset="img/france-mobile-1@2x.jpg 2x" alt="Франция">
+                </picture>
                 <div class="country-card__description country-card__description--fr">
                   <h2 class="country-card__title">Франция</h2>
                   <p class="country-card__subtitle">Трэ бьен, манифик!</p>
@@ -177,7 +183,10 @@
             </li>
             <li class="directions__item">
               <article class="country-card country-card--cz">
-                <img class="country-card__img country-card__img--cz" src="img/czech-mobile.jpg" width="270" height="110" alt="Чехия">
+                <picture class="country-card__picture">
+                  <source media="(min-width: 768px)" srcset="img/czech-desktop-2.jpg 1x, img/czech-desktop-2@2x.jpg 2x">
+                  <img class="country-card__img country-card__img--cz" src="img/czech-mobile.jpg" srcset="img/czech-mobile-1@2x.jpg 2x" alt="Чехия">
+                </picture>
                 <div class="country-card__description country-card__description--cz">
                 <h2 class="country-card__title">Чехия</h2>
                 <p class="country-card__subtitle">Закоулки старой Европы</p>
@@ -202,16 +211,19 @@
           <ul class="travellers__list">
             <li class="travellers__item">
               <article class="user-card">
-                <img class="user-card__img" src="img/user-card-firsova.jpg" width="270" height="270" alt="Фотография пользователя">
+                <picture class="user-card__picture">
+                  <source media="(min-width: 768px)" srcset="img/user-card-firsova-tablet.jpg 1x, img/user-card-firsova-tablet@2x.jpg 2x">
+                  <img class="user-card__img" src="img/user-card-firsova.jpg" srcset="img/user-card-firsova-mobile@2x.jpg 2x" alt="Фотография пользователя">
+                </picture>
                 <div class="user-card__level level level--number>">
                   <span class="level__number">99</span>
                   <span class="level__text">level</span>
                 </div>
                 <div class="user-card__info">
                   <ul class="user-card__flags flags">
-                    <li class="user-card__flag user-card__flag--sc"></li>
-                    <li class="user-card__flag user-card__flag--th"></li>
-                    <li class="user-card__flag user-card__flag--lk"></li>
+                    <li class="user-card__flag user-card__flag--sc tooltip" date-tooltip="Шри-Ланка"></li>
+                    <li class="user-card__flag user-card__flag--th tooltip" date-tooltip="Таиланд"></li>
+                    <li class="user-card__flag user-card__flag--lk tooltip" date-tooltip="Сейшелы"></li>
                   </ul>
                   <h2 class="user-card__title user-card__title--unavailable">Таня Фирсова</h2>
                   <ul class="user-card__tags">
@@ -223,25 +235,28 @@
                     <li class="user-card__tag">#смузи</li>
                   </ul>
                   <ul class="user-card__travel-mods">
-                    <li class="user-card__travel-mod user-card__travel-mod--plane user-card__travel-mod--active">plane</li>
-                    <li class="user-card__travel-mod user-card__travel-mod--bus">bus</li>
-                    <li class="user-card__travel-mod user-card__travel-mod--bicycle">bicycle</li>
-                    <li class="user-card__travel-mod user-card__travel-mod--walk">walk</li>
+                    <li class="user-card__travel-mod user-card__travel-mod--plane user-card__travel-mod--active tooltip" data-tooltip="Авиаперелет">plane</li>
+                    <li class="user-card__travel-mod user-card__travel-mod--bus tooltip" data-tooltip="Автотранспорт">bus</li>
+                    <li class="user-card__travel-mod user-card__travel-mod--bicycletooltip" data-tooltip="Велосипед">bicycle</li>
+                    <li class="user-card__travel-mod user-card__travel-mod--walktooltip" data-tooltip="Пешком">walk</li>
                   </ul>
                 </div>
               </article>
             </li>
             <li class="travellers__item">
               <article class="user-card">
-                <img class="user-card__img" src="img/user-card-demin.jpg" width="270" height="270" alt="Фотография пользователя">
+                <picture class="user-card__picture">
+                  <source media="(min-width: 768px)" srcset="img/user-card-demin-tablet.jpg 1x, img/user-card-demin-tablet@2x.jpg 2x">
+                  <img class="user-card__img" src="img/user-card-demin.jpg" srcset="img/user-card-demin-mobile@2x.jpg 2x" alt="Фотография пользователя">
+                </picture>
                 <div class="user-card__level level level--number">
                   <span class="level__number">80</span>
                   <span class="level__text">level</span>
                 </div>
                 <div class="user-card__info">
                   <ul class="user-card__flags">
-                    <li class="user-card__flag user-card__flag--be"></li>
-                    <li class="user-card__flag user-card__flag--cz"></li>
+                    <li class="user-card__flag user-card__flag--be tooltip" data-tooltip="Бельгия"></li>
+                    <li class="user-card__flag user-card__flag--cz tooltip" data-tooltip="Чехия"></li>
                   </ul>
                   <h2 class="user-card__title user-card__title--available">Петя Демин</h2>
                   <ul class="user-card__tags">
@@ -252,10 +267,10 @@
                     <li class="user-card__tag">#крафт</li>
                   </ul>
                   <ul class="user-card__travel-mods">
-                    <li class="user-card__travel-mod user-card__travel-mod--plane user-card__travel-mod--active">plane</li>
-                    <li class="user-card__travel-mod user-card__travel-mod--bus user-card__travel-mod--active">bus</li>
-                    <li class="user-card__travel-mod user-card__travel-mod--bicycle">bicycle</li>
-                    <li class="user-card__travel-mod user-card__travel-mod--walk user-card__travel-mod--active">walk</li>
+                    <li class="user-card__travel-mod user-card__travel-mod--plane user-card__travel-mod--active tooltip user-card__tooltip" data-tooltip="Авиаперелет">plane</li>
+                    <li class="user-card__travel-mod user-card__travel-mod--bus user-card__travel-mod--active tooltip" data-tooltip="Автотранспорт">bus</li>
+                    <li class="user-card__travel-mod user-card__travel-mod--bicycle tooltip" data-tooltip="Велосипед">bicycle</li>
+                    <li class="user-card__travel-mod user-card__travel-mod--walk user-card__travel-mod--active tooltip" data-tooltip="Пешком">walk</li>
                   </ul>
                 </div>
               </article>

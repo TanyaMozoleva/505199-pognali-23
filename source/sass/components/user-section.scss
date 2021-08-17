@@ -1,5 +1,6 @@
 .user-section {
   background-color: var(--background);
+  min-height: 458px;
 }
 
 .user-section__number {
@@ -32,4 +33,8 @@
   line-height: 18px;
   color: var(--basic-blue);
   text-transform: uppercase;
+}
+
+.user-section__form {
+  padding-bottom: 34px;
 }

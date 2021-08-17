@@ -23,7 +23,7 @@
               <path d="M93.1598 12.7451C93.1598 13.9835 92.1101 14.9875 90.8153 14.9875C89.5204 14.9875 88.4707 13.9835 88.4707 12.7451C88.4707 11.5066 89.5204 10.5027 90.8153 10.5027C92.1101 10.5027 93.1598 11.5066 93.1598 12.7451Z" fill="currentColor"/>
             </svg>
           </a>
-          <button class="page-header__open page-header__burger" type="button">
+          <button class="page-header__burger page-header__burger--open page-header__burger--close" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <h1 class="page-header__text">Направления</h1>
@@ -63,13 +63,13 @@
           <section class="social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link social__link--facebook" href="#">facebook</a>
+                <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">facebook</span></a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="#">vkontakte</a>
+                <a class="social__link social__link--vkontakte" href="#"><span class="visually-hidden">vkontakte</span></a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--instagram" href="#">instagram</a>
+                <a class="social__link social__link--instagram" href="#"><span class="visually-hidden">instagram</span></a>
               </li>
             </ul>
           </section>
@@ -145,15 +145,17 @@
 
       <form class="plans" action="https://echo.htmlacademy.ru/" method="POST">
         <div class="container">
-          <h2 class="plans__title">Добавить план:</h2>
-
-          <div class="plans__controls controls">
-            <ul class="controls__list">
-              <li class="controls__item"><a class="controls__link>" href="#"><span class="controls__text visually-hidden">Даты</span></a></li>
-              <li class="controls__item"><a class="controls__link>" href="#"><span class="controls__text visually-hidden">Маршрут</span></a></li>
-              <li class="controls__item"><a class="controls__link>" href="#"><span class="controls__text visually-hidden">Развлечения</span></a></li>
-            </ul>
+          <div class="plans__description">
+            <h2 class="plans__title">Добавить план:</h2>
+            <div class="plans__controls controls">
+              <ul class="controls__list">
+                <li class="controls__item"><a class="controls__link>" href="#"><span class="controls__text visually-hidden">Даты</span></a></li>
+                <li class="controls__item"><a class="controls__link>" href="#"><span class="controls__text visually-hidden">Маршрут</span></a></li>
+                <li class="controls__item"><a class="controls__link>" href="#"><span class="controls__text visually-hidden">Развлечения</span></a></li>
+              </ul>
+            </div>
           </div>
+
 
           <fieldset class="plan plan--dates" id="step1">
             <h2 class="plan__title">Шаг 1. Даты пребывания</h2>
@@ -240,7 +242,7 @@
                   <li class="weeks__item"><button class="weeks__button" type="button">15</button></li>
                 </ul>
 
-                <ul class="weeks">
+                <ul class="weeks__list">
                   <li class="weeks__item"><button class="weeks__button" type="button">16</button></li>
                   <li class="weeks__item"><button class="weeks__button" type="button">17</button></li>
                   <li class="weeks__item"><button class="weeks__button" type="button">18</button></li>

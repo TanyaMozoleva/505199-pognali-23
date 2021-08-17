@@ -1,27 +1,27 @@
 
 .about-us {
   background-color: var(--basic-blue);
-  background-image: url("../../img/globe-back-mobile\ 1.png"),url("../../img/traveller-illustration-mobile\ 1.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: center, 60px 150px;
+  // background-image: url("../../img/globe-back-mobile\ 1.png"),url("../../img/traveller-illustration-mobile\ 1.png");
+  // background-repeat: no-repeat, no-repeat;
+  // background-position: center, 60px 150px;
 
-  @media (min-width: $tablet-width) {
-    background-image: url("../../img/tablet/traveller-illustration-tablet-1.png");
-    // background-size: 372px 451px;
-    background-repeat: no-repeat;
-    background-position: 260px 262px;
-  }
+  // @media (min-width: $tablet-width) {
+  //   background-image: url("../../img/tablet/traveller-illustration-tablet-1.png");
+  //   // background-size: 372px 451px;
+  //   background-repeat: no-repeat;
+  //   background-position: 260px 262px;
+  // }
 
-  @media (min-width: $desktop-width) {
-    min-height: 640px;
-    background-image: url("../../img/traveller-illustration-desktop-1.png");
-    background-repeat: no-repeat;
-    background-position: 10px 10px;
-  }
+  // @media (min-width: $desktop-width) {
+  //   min-height: 640px;
+  //   background-image: url("../../img/traveller-illustration-desktop-1.png");
+  //   background-repeat: no-repeat;
+  //   background-position: 10px 10px;
+  // }
 }
 
 .about-us__inner {
-  // background-image: url("../../img/traveller-illustration-mobile\ 1.png");
+  // background-image: url("../../img/traveller-illustration-mobile1.png");
   // background-repeat: no-repeat;
   // background-position: center;
 

@@ -79,7 +79,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 161px;
+    // padding-left: 161px;
   }
 }
 
@@ -181,7 +181,7 @@
 .profile__button {
   @include btn-reset;
 
-  margin-left: 25px;
+  // margin-left: 25px;
 
   font-weight: 700;
   font-size: 16px;
@@ -189,13 +189,13 @@
   color: var(--bright-blue);
 
   @media (min-width: $tablet-width) {
-    margin-left: 90px;
+    // margin-left: 90px;
 
     font-size: 20px;
     line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 160px;
+    // margin-left: 160px;
   }
 }

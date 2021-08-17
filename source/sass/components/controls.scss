@@ -1,3 +1,10 @@
+.controls__list {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  padding-top: 9px;
+}
+
 .controls__item {
   width: 5px;
   height: 5px;

@@ -95,6 +95,8 @@
   display: flex;
   flex-wrap: nowrap;
 
+  position: relative;
+
   @media (min-width: $tablet-width) {
     margin-right: 36px;
     margin-left: 36px;
@@ -151,8 +153,9 @@
 
   background-color: var(--basic-yellow);
 
-  position: relative;
-  left: -10px;
+  position: absolute;
+  top: 0;
+  right: 10px;
 
   &::after {
     content: "";
@@ -172,7 +175,7 @@
     height: 80px;
     padding: 34px 33px 32px 31px;
 
-    left: -15px;
+    right: 15px;
 
     &::after {
       right: 32px;
@@ -221,18 +224,7 @@
 
 .promo__link-contacts {
   color: var(--basic-yellow);
-
   line-height: 22px;
-
-  &:hover {
-    color: var(--special-yellow-dark);
-    fill: var(--special-yellow-dark);
-  }
-
-  &:active {
-    color: var(--basic-yellow-opacity3);
-    fill: var(--special-yellow-dark-opacity3);
-  }
 }
 
 .promo__link-contacts--phone,
@@ -258,6 +250,22 @@
 .promo__icon {
   margin-left: 14px;
   fill: var(--basic-yellow);
+  position: relative;
+
+  // &::before {
+  //   content: "";
+  //   width: 45px;
+  //   height: 45px;
+  //   border-radius: 50px;
+
+  //   display: block;
+
+  //   position: absolute;
+  //   top: 0;
+  //   right: 10px;
+  //   background-color: var(--special-blue-dark);
+  //   // z-index: 3;
+  // }
 }
 
 .promo__icon--phone {
@@ -266,4 +274,17 @@
 
 .promo__icon--email {
   margin-right: 28px;
+}
+
+.promo__link-contacts,
+.promo__link-contacts .promo__icon {
+  &:hover {
+    color: var(--special-yellow-dark);
+    fill: var(--special-yellow-dark);
+  }
+
+  &:active {
+    color: var(--basic-yellow-opacity3);
+    fill: var(--special-yellow-dark-opacity3);
+  }
 }

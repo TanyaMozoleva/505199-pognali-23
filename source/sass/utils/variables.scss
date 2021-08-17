@@ -8,7 +8,11 @@
   --basic-white: #ffffff;
   --basic-white-opacity3: rgba(255, 255, 255, 0.3);
   --basic-black: #000000;
+  --black-shadow: rgba(0, 0, 0, 0.16);
   --basic-red: #ff5c23;
+  --special-red: #f97676;
+
+  --special-green: #81e31e;
 
   --black-opacity: rgb(0, 0, 0, 0.3);
 
@@ -25,6 +29,7 @@
   --background-light: #c4c4c4;
   --bacground-country-filter: #e2e5f2;
   --light-grey: #d6daed;
+  --grey: #cccccc;
 
   --dark-blue: #192144;
   --special-blue-dark: #121936;
@@ -37,6 +42,7 @@
   --business-button-background: #f3f4f8;
   --profile-background: #e6e8f1;
   --plans-background: #d4d9eb;
+  --tooltip-background: #101d41;
 
   --bright-blue: #132576;
 }

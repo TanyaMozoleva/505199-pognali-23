@@ -2,6 +2,9 @@
   margin-bottom: 8px;
   margin-right: 34px;
 
+  display: flex;
+  justify-content: space-between;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
@@ -25,4 +28,35 @@
   font-size: 14px;
   line-height: 14px;
   color: var(--basic-blue-light);
+  text-align: center;
+}
+
+.counter__inner {
+  position: relative;
+}
+
+.counter__button {
+  @include btn-reset;
+}
+
+.counter__button--decrease {
+  position: relative;
+  top: 30px;
+  left: 10px;
+
+  &::before {
+    content: "";
+    width: 14px;
+    height: 2px;
+    color: var(--grey);
+    position: absolute;
+    top: 20px;
+    left: 0;
+  }
+}
+
+.counter__button--increase {
+  position: relative;
+  top: -30px;
+  left: 180px;
 }

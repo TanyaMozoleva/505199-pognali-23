@@ -1,5 +1,5 @@
 .modal-business {
-  width: 270px;
+  // width: 270px;
   min-height: 443px;
 
   border-radius: 20px;
@@ -7,18 +7,18 @@
   background-color: var(--basic-white);
 
   @media (min-width: $tablet-width) {
-    width: 688px;
+    // width: 688px;
     height: 526px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 750px;
+    // width: 750px;
     height: 526px;
   }
 }
 
 .modal-business__title {
-  margin-left: 51px;
+  padding-left: 51px;
   margin-bottom: 39px;
   padding-top: 34px;
 
@@ -29,7 +29,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 61px;
-    margin-left: 188px;
+    padding-left: 188px;
     padding-top: 54px;
 
     font-size: 45px;
@@ -38,7 +38,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 58px;
-    margin-left: 219px;
+    padding-left: 219px;
     padding-top: 54px;
   }
 }
@@ -48,19 +48,19 @@
   margin-bottom: 45px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 90px;
+    // padding-left: 90px;
     margin-bottom: 64px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 58px;
+    // padding-left: 58px;
     margin-bottom: 70px;
   }
 }
 
 .modal-business__item {
   margin-bottom: 22px;
-  margin-left: 25px;
+  // margin-left: 25px;
 
   @media (min-width: $tablet-width) {
     display: grid;

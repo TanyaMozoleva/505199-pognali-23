@@ -1,7 +1,11 @@
 .user-plans {
+  min-height: 458px;
   border-radius: 25px;
 
   background-color: var(--special-blue-light);
+
+  // position: relative;
+  // top: -10px;
 }
 
 .user-plans__title {
